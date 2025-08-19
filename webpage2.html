@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Blog</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+    }
+
+    /* Header */
+    header {
+      background: #2196f3;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 24px;
+      border-radius: 20px;
+    }
+
+    /* Navigation */
+    nav {
+      background: #ff9800;
+      padding: 10px;
+      text-align: center;
+      border-radius: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Main Layout (Grid) */
+    .container {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-gap: 15px;
+      padding: 15px;
+    }
+
+    /* Featured Post */
+    .featured {
+      background: #4caf50;
+      color: white;
+      padding: 20px;
+      border-radius: 20px;
+      grid-column: span 2;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    /* Blog Posts */
+    .post {
+      background: white;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Sidebar */
+    .sidebar {
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Footer */
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 15px;
+      border-radius: 10px;
+    }
+
+    /* 📱 Responsive (for small screens) */
+    @media (max-width: 768px) {
+      .container {
+        grid-template-columns: 1fr; /* stack everything */
+      }
+      .featured {
+        grid-column: span 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>🌐 My Blog</header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Articles</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <div class="container">
+    <div class="featured">✨ Featured Post – This one spans full width!</div>
+
+    <div class="post">📘 Blog Post 1</div>
+    <div class="sidebar">📌 Sidebar – Links & Ads</div>
+
+    <div class="post">📘 Blog Post 2</div>
+    <div class="sidebar">📌 More Sidebar Content</div>
+  </div>
+
+  <footer>© 2025 My Blog – All rights reserved.</footer>
+
+</body>
+</html>

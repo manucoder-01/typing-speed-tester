@@ -1,0 +1,139 @@
+<html>
+<head>
+    <title>CSS Basic Practice</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        h1 {
+            color: darkblue;
+            background-color: lightblue;
+            text-align: center;
+            font-style: italic;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 5px gray; /* Adds a shadow effect to the text */
+            -webkit-background-clip: text; /* Clips the background to the text */
+        }
+
+        p {
+            font-size: 20px;           
+            font-weight: bold;         
+            background-color: rgb(180, 205, 213); 
+            padding: 20px;             
+            margin: 30px;              
+            border: 2px dashed rgb(244, 250, 244);  
+            border-radius: 16px; 
+            text-align: center;
+            transition: all 0.3s ease; 
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        small {
+            font-style: italic;             
+            color: hsl(200, 100%, 40%);  /* Blue tone using HSL */
+            text-decoration: underline dotted;
+        }
+
+        body {
+            background: linear-gradient(to right, #f0f0f0, #d9e4f5); /* Fixed gradient */
+            font-family: 'Poppins', sans-serif;
+        }
+
+        h1, p {
+            text-align: center; 
+        }
+
+        p:hover {
+            background-color: lightgreen;
+            color: darkblue; /* Fixed missing semicolon */
+            border: 2px solid darkblue;
+        }
+
+        .container {
+            max-width: 600px;     
+            margin: 50px auto;    
+            padding: 20px;        
+            background-color: white; 
+            border-radius: 10px;  
+            display: flex;
+            flex-direction: column; 
+            gap: 20px; 
+            animation: fadein 0.8s ease-in-out;
+            transition: transform 0.3s ease; /* Smooth hover effect */
+        }
+
+        @keyframes fadein { /* Fixed @keyframes syntax */
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .container:hover {
+            transform: scale(1.02); /* Fixed scale to be more natural */
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                width: 90%; 
+                padding: 10px; 
+            }
+            h1 {
+                font-size: 24px; 
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+
+        /* Second section styles */
+        .container h1:nth-of-type(2) {
+            background: linear-gradient(to right, #4CAF50, #81C784);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .container p:nth-of-type(2) {
+            background-color: #fff3cd; 
+            border: 2px dotted orange;
+            color: #b36b00; 
+        }
+
+        .container p:nth-of-type(2):hover {
+            background-color: #ffe082;
+            color: #5d4037;
+            border: 2px solid #b36b00;
+        }
+
+        .container small:nth-of-type(2) {
+            color: hsl(340, 80%, 40%);
+            text-decoration: overline wavy;
+        }
+        .container img {
+            max-width: 10%; 
+            height: auto; 
+            border-radius: 10px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+            transition: transform 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>My First CSS Page</h1>
+        <p>This is a paragraph with styling.</p>
+        <small>This is a small note.</small>
+        <img src="C:\Users\Manu\OneDrive\Pictures\2976110.jpg" alt="Placeholder Image" style="display: block; margin: 0 auto; border-radius: 1px; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);">
+
+        <h1>My Second CSS Section</h1>
+        <p>This is another paragraph with a new style.</p>
+        <a href=https://www.instagram.com/manu.541n1/?__pwa=1>Instagram </a>
+
+        <small>This is another small note.</small>
+    </div>
+</body>
+</html>
